@@ -1,0 +1,283 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: #EAC926;
+    padding: 0;
+}
+
+.logoBarra{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.banner{
+    margin: 0;
+}
+
+main{
+    background-color: #ebebeb;
+    background-size:cover;
+
+}
+
+footer{
+    margin-top: 50px;
+    text-align: center;
+}
+
+ul{
+    padding: 0px;
+}
+
+ul li {
+    list-style: none;
+    font-style: normal;
+}
+
+ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.fa{
+    position: relative;
+    right: 1px;
+}
+
+.mercadoLiebre{
+    width: 40vw;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    width: 25vw;
+    align-items: center;
+}
+.container input{
+    width: auto;
+}
+
+.btn{
+    background-color: #ebebeb;
+    width:max-content;
+    padding: 1px;
+    border: solid 1px #666;
+    border-radius: 10% ;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.titulares{
+    font-size: 24px;
+    color: #666;
+}
+
+.subtitle{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    left: 20px;
+}
+
+.articulos{
+    background-color: white;
+    width: 90%;
+    padding: 15px;
+    margin: 10px 20px;
+    box-sizing: border-box;
+}
+
+.textoProducto{
+    display: flex;
+    flex-direction: column;
+    flex-wrap:wrap-reverse;
+    border-top: solid 1px #ebebeb;
+    box-sizing: border-box;
+}
+
+
+.truck{
+    display: relative;
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+    color: #39b54a;
+    background-color: white;
+    padding: 5px;
+    border: solid 1px #39b54a;
+    border-radius: 50%;
+    box-sizing: border-box;
+    position: relative;
+    right: 5px;
+    top: -15px;
+}
+
+.preciosDescuentos{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+.precios{
+    flex-grow: 0.3;
+    font-size: 18px;
+    margin: 0;
+    align-self: center;
+}
+
+.descuentos{
+    flex-grow: 0.7;
+    font-size: 16px;
+    margin: 0px;
+    color: #39b54a;
+    align-self: center;
+}
+
+.descripciones{
+    color: #666;
+    margin: 0;
+    margin-top: 15px;
+    margin-bottom: 0px;
+    font-size: 16px;
+    position: relative;
+    justify-content: start;
+    
+}
+
+.burger-menu{
+    display: block;
+    justify-content: center;
+    text-align: center;
+    width: 25px; 
+    background: #1259c3; 
+    color: white;
+    border-radius: 15%;
+    padding: 0.25rem;
+    margin: 10px;
+    box-sizing: border-box;
+    position: relative;
+    left: 45%;
+}
+
+
+.iconosFooter{
+    color:#1259c3;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.copyright{
+    text-align: left;
+    color:#666;
+    margin-top: 20px
+}
+
+
+.loguearse form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+main form input{
+    margin: 5px;
+}
+
+
+@media (max-width: 360px) {
+    .bar{
+        display: none;
+    }
+    .descripciones{
+        display: none;
+    }
+}
+@media (min-width: 361px){
+    html{
+        width: 100%;
+    }
+    .logoBarra{
+        justify-content: space-between;
+    }
+    .mercadoLiebre{
+        width: 30%;
+    }
+    .container{
+        width: 30%;
+
+    }
+    .container input{
+        width: 90%;
+    }
+    .subtitle{
+    left: auto;
+    }
+    .articulos{
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        width: 300px;
+    }
+    .articuloswidth{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .burger-menu{
+        display: none
+    }
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .bar{
+        display: flex;
+    justify-content: space-between;
+    }
+
+    .site ul{
+        display: flex;
+        flex-direction: row;
+    }
+    ul li{
+        margin: 10px;
+    }
+
+    .loginBar ul{
+
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+    }
+}
+
+@media (min-width: 769px) {
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+    .footerAll{
+        display: flex;
+        flex-direction: row;
+    }
+}
